@@ -61,7 +61,10 @@ public class flight extends javax.swing.JInternalFrame {
         txtflightid = new javax.swing.JLabel();
         txtflightnamelable = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 51));
+        setTitle("Add Flight");
+        setToolTipText("");
+
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Destination");
@@ -81,6 +84,7 @@ public class flight extends javax.swing.JInternalFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Price");
 
+        jButton1.setBackground(new java.awt.Color(102, 255, 51));
         jButton1.setText("ADD");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,6 +92,8 @@ public class flight extends javax.swing.JInternalFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(255, 0, 0));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Cancel");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,6 +109,7 @@ public class flight extends javax.swing.JInternalFrame {
 
         txtfdest.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Delhi", "Mumbai", "Banglore", "Kolkata", "Hydrabad", "Chennai", "New york", "London", "Dubai" }));
 
+        txtflightid.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txtflightid.setForeground(new java.awt.Color(255, 255, 255));
         txtflightid.setText("001");
 
@@ -128,16 +135,15 @@ public class flight extends javax.swing.JInternalFrame {
                         .addComponent(txtfarr, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(txtfdep, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(txtfdest, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(txtflightid))
+                    .addComponent(txtflightid, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(58, 58, 58)
                         .addComponent(jButton1)
                         .addGap(36, 36, 36)
-                        .addComponent(jButton2)
-                        .addGap(0, 100, Short.MAX_VALUE))
+                        .addComponent(jButton2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -148,10 +154,10 @@ public class flight extends javax.swing.JInternalFrame {
                                 .addComponent(txtflightnamelable)
                                 .addGap(53, 53, 53)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtfprice, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtfname, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(94, Short.MAX_VALUE))))
+                            .addComponent(fdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtfname)
+                            .addComponent(txtfprice))))
+                .addGap(100, 100, 100))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
